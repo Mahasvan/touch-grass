@@ -1,0 +1,19 @@
+[project]
+name = "touch-grass"
+version = "0.1.0"
+description = "The Anti-Router: offline-first wanderlust agent that plans exploratory pedestrian dérives"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "osmnx>=2.1.1",
+]
+
+[project.scripts]
+touch-grass = "touch_grass:main"
+
+[dependency-groups]
+dev = ["pytest>=9.1.1"]
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
